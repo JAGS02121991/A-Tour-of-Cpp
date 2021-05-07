@@ -17,7 +17,7 @@ Vector add(Vector &x, Vector &y)
     for (int i = 0; i < x.getSize(); i++)
         sum[i] = x[i] + y[i];
 
-    return sum;
+    return std::move(sum);
 }
 
 int main()
